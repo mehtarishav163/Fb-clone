@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import Header from './Header';
+import Sidebar from './Sidebar';
+import SidebarRow from './SidebarRow';
+import Feed from './Feed';
+import StoryReel from './StoryReel';
+import MessageSender from './MessageSender';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <h3>Built a facebook clone</h3>
+      <Header />
+      <div className = "app_body">
+        <Sidebar />
+        <SidebarRow />
+        <Feed />
+      </div>
     </div>
   );
 }
